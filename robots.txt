@@ -4,7 +4,7 @@ Allow: /
 # Sitemap locations
 Sitemap: https://genderwatchdog.org/sitemap.xml
  
-# Future subdomain sitemaps will be added here
-# Sitemap: https://metookorea2025.genderwatchdog.org/sitemap.xml
-# Sitemap: https://blog.genderwatchdog.org/sitemap.xml
-# Sitemap: https://dashboard.genderwatchdog.org/sitemap.xml 
+# Subdomain sitemaps
+Sitemap: https://blog.genderwatchdog.org/sitemap.xml
+Sitemap: https://metookorea2025.genderwatchdog.org/sitemap.xml
+Sitemap: https://dashboard.genderwatchdog.org/sitemap.xml 
