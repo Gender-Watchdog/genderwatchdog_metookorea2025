@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/gender_watchdog
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://genderwatchdog.org
+  * I am gender_watchdog (https://keybase.io/gender_watchdog) on keybase.
+  * I have a public key ASBFQMqfMLTWDEBQ3MyV1PHs8V9l0a9io5xq18yr8yGwBgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204540ca9f30b4d60c4050dccc95d4f1ecf15f65d1af62a39c6ad7ccabf321b0060a",
+      "host": "keybase.io",
+      "kid": "01204540ca9f30b4d60c4050dccc95d4f1ecf15f65d1af62a39c6ad7ccabf321b0060a",
+      "uid": "0db9051a6f95ad5ea43f58c2e5f57819",
+      "username": "gender_watchdog"
+    },
+    "merkle_root": {
+      "ctime": 1750763243,
+      "hash": "6b9962f30ecc747cd2ac9cfc1a2a81804af6f643e3236b64888e56af818be487196e387778b6704dd712f85f7188baafef1c7266e511adf7bd571a724888b463",
+      "hash_meta": "494a80c86d2c28bafc79e6b44b90e34b7b0e086263f3cd74d1e750a2b88b2340",
+      "seqno": 26896548
+    },
+    "service": {
+      "entropy": "RfayO7NnhzguEW1nBDXa/qPC",
+      "hostname": "genderwatchdog.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.1"
+  },
+  "ctime": 1750763327,
+  "expire_in": 504576000,
+  "prev": "b0186484842ef5c8bfefdd8b7ebf043062e192a2583fc9e22b2ac67f7403b9df",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRUDKnzC01gxAUNzMldTx7PFfZdGvYqOcatfMq/MhsAYKp3BheWxvYWTESpcCBMQgsBhkhIQu9ci/792Lfr8EMGLhkqJYP8niKyrGf3QDud/EIOFSt3aQARAaGcPfEvx/IO3oYtTS15Cz49HnciXVIJRdAgHCo3NpZ8RA94cYK3ApMsii43S68SyOSNeplpbT7Op5mp3oto5dwJfGUegRzlbg/3euT/sdYKKqJlNbLYITRvlnMgNhMuaZBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAJODkuflmdF4jP6IowQO77PX2r3aj5+u+CSFXeAVtr9o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gender_watchdog
+
+==================================================================
