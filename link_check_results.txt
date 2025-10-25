@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/nginx/Documents/2_GenderWatchdog/genderwatchdog-home/test_links.py", line 6, in <module>
+    from bs4 import BeautifulSoup
+ModuleNotFoundError: No module named 'bs4'

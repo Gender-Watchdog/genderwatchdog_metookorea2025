@@ -10,8 +10,11 @@ HTML_FILES = [
     'index.html',
     'index-en.html',
     'index-ja.html',
+    'index-ko.html',
+    'index-vn.html',
     'index-zh-ch.html',
     'index-zh-tw.html',
+    'pages/state-sex-trafficking/state-sex-traffic-en.html',
 ]
 
 # Regex for blog links
@@ -180,12 +183,7 @@ def main():
         if os.path.isfile(path_param):
             # Single file mode
             if path_param.lower().endswith('.html'):
-                # Only check if it's in the root directory
-                if '/' not in path_param and '\\' not in path_param:
                 files_to_check = [path_param]
-                else:
-                    print(f"Error: File '{path_param}' is not in the root directory.")
-                    return
             else:
                 print(f"Error: File '{path_param}' is not an HTML file.")
                 return
@@ -199,7 +197,7 @@ def main():
             return
     else:
         # Default mode - check predefined files
-        print("No path specified. Checking default HTML files in the root directory...")
+        print("No path specified. Checking default HTML files...")
         
         # Only include files that actually exist
         for html_file in HTML_FILES:
@@ -276,7 +274,7 @@ def main():
             del broken_links_summary[html_file]
     
     print("\n=== Summary ===")
-    print(f"Checked {file_count} HTML files in the root directory")
+    print(f"Checked {file_count} HTML files")
     print(f"Found {external_links_count} external links ({broken_external_links} broken)")
     print(f"Found {internal_links_count} internal links ({broken_internal_links} broken)")
     print(f"Found {special_links_count} special links ({broken_special_links} broken)")
