@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.default_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% seo %}
+
+    <!-- Canonical and language tags -->
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    {% if page.translations %}
+    {% for translation in page.translations %}
+    <link rel="alternate" href="{{ translation.url | absolute_url }}" hreflang="{{ translation.lang }}">
+    {% endfor %}
+    {% endif %}
+    <meta http-equiv="Content-Language" content="{% for lang in site.languages %}{{ lang }}{% unless forloop.last %}, {% endunless %}{% endfor %}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{{ page.og_title | default: page.title | default: site.title }}">
+    <meta property="og:description" content="{{ page.og_description | default: page.description | default: site.description }}">
+    <meta property="og:image" content="{{ page.og_image | default: page.image | default: site.logo | absolute_url }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+    <meta property="twitter:title" content="{{ page.og_title | default: page.title | default: site.title }}">
+    <meta property="twitter:description" content="{{ page.og_description | default: page.description | default: site.description }}">
+    <meta property="twitter:image" content="{{ page.og_image | default: page.image | default: site.logo | absolute_url }}">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/imgs/favicons/gender_watchdog_favicon_32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/imgs/favicons/gender_watchdog_favicon_16x16.png' | relative_url }}">
+
+    <!-- Mastodon verification -->
+    <link rel="me" href="{{ site.author.mastodon_url }}">
+
+    <!-- Author attribution for Mastodon -->
+    <meta name="fediverse:creator" content="{{ site.author.mastodon }}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Google Fonts - Noto Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ '/css/styles.css' | relative_url }}" rel="stylesheet">
+
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="{{ site.fathom_site_id }}" defer></script>
+    <!-- / Fathom -->
+</head>
+<body>
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="{{ '/js/scripts.js' | relative_url }}"></script>
+
+    {% include structured-data.html %}
+</body>
+</html>

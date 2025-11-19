@@ -1,0 +1,13 @@
+<!-- JSON-LD loader for SEO structured data -->
+{% if page.structured_data_file %}
+<script>
+fetch('{{ page.structured_data_file | relative_url }}')
+  .then(response => response.json())
+  .then(data => {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(data);
+    document.head.appendChild(script);
+  });
+</script>
+{% endif %}

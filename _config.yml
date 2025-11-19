@@ -1,0 +1,98 @@
+# Site settings
+title: "Gender Watchdog"
+tagline: "Documenting Racialized Sexual Violence at Dongguk University"
+description: "Documentation of racialized sexual violence, institutional cover-ups, and alleged misuse of public funds at Dongguk University and other Korean institutions. Features investigative video evidence analyzing how racism and sexual violence intersect to target international students."
+url: "https://genderwatchdog.org"
+baseurl: ""
+
+# Author/Social
+author:
+  name: "Gender Watchdog"
+  mastodon: "@genderwatchdog@mastodon.social"
+  mastodon_url: "https://mastodon.social/@genderwatchdog"
+
+# SEO settings for jekyll-seo-tag
+logo: /imgs/favicons/gender_watchdog_favicon_48x48.png
+social:
+  name: Gender Watchdog
+  links:
+    - https://mastodon.social/@genderwatchdog
+
+# Fathom Analytics
+fathom_site_id: "TLDNEOPI"
+
+# Language settings
+languages: ["en", "ko", "ja", "zh-ch", "zh-tw", "vn"]
+default_lang: "en"
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      image: /imgs/og-image-en.jpg
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .bundle/
+  - .git/
+  - .gitignore
+  - README.md
+  - seo/generate_sitemap.py
+  - test_links.py
+  - redact_names.py
+  - decode_emails.py
+  - convert_to_jekyll.py
+  - convert_pages.py
+  - blog-posts/
+  - email_emls/
+  - rape-reporting-resources/
+  - social-media-settings/
+  - sitemap.xml
+  # Old HTML files (now converted to Jekyll in _pages/)
+  - index.html
+  - index-*.html
+  - pages/
+
+# Include files
+include:
+  - CNAME
+  - robots.txt
+  - google-site-verification.html
+  - yandex_ad5be3f3f2bc4e8e.html
+  - .well-known
+
+# Sass/SCSS
+sass:
+  style: compressed
+
+# Timezone
+timezone: Asia/Seoul
