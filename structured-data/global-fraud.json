@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "Global Fraud Alert: 3 Confirmed False Partnerships Expose Dongguk University's 'House of Cards'",
+  "image": [
+    "https://genderwatchdog.org/imgs/og-image-en.jpg"
+  ],
+  "datePublished": "2025-12-23T08:00:00+09:00",
+  "dateModified": "2025-12-23T08:00:00+09:00",
+  "author": [{
+      "@type": "Organization",
+      "name": "Gender Watchdog",
+      "url": "https://genderwatchdog.org"
+  }],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gender Watchdog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://genderwatchdog.org/imgs/favicons/gender_watchdog_favicon_48x48.png"
+    }
+  },
+  "description": "Investigation revealing fake international partnerships and misuse of public funds at Dongguk University, confirming 3 false partnerships across 2 continents."
+}

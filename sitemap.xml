@@ -82,6 +82,21 @@
     <xhtml:link rel="alternate" hreflang="zh-tw" href="https://genderwatchdog.org/index-zh-tw.html"/>
   </url>
 
+  <!-- New Blog Posts -->
+  <url>
+    <loc>https://genderwatchdog.org/global-fraud/</loc>
+    <lastmod>2025-12-23T08:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://genderwatchdog.org/professor-f/</loc>
+    <lastmod>2025-12-03T08:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Election issue pages - High priority current topic -->
   <url>
     <loc>https://genderwatchdog.org/pages/new-administration/election-issue-ko.html</loc>

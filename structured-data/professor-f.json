@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Report",
+  "headline": "New Sexual Violence Case at Dongguk University: Professor F's Abuse and Institutional Silence",
+  "image": [
+    "https://genderwatchdog.org/imgs/og-image-en.jpg"
+  ],
+  "datePublished": "2025-12-03T08:00:00+09:00",
+  "dateModified": "2025-12-03T08:00:00+09:00",
+  "author": [{
+      "@type": "Organization",
+      "name": "Gender Watchdog",
+      "url": "https://genderwatchdog.org"
+  }],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gender Watchdog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://genderwatchdog.org/imgs/favicons/gender_watchdog_favicon_48x48.png"
+    }
+  },
+  "description": "Report on the institutional cover-up of sexual harassment allegations against 'Professor F' at Dongguk University, detailing a 4-month delay in disciplinary action."
+}
